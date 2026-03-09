@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node --check /Users/jeegarkakkad/Documents/GitHub/Draghi/app.js)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(kill %1)",
+      "Bash(lsof -ti :8765)",
+      "Bash(xargs kill -9)",
+      "Bash(/usr/bin/python3 --version)"
+    ]
+  }
+}
