@@ -1,9 +1,5 @@
 <!doctype html>
-<<<<<<< HEAD
-<html lang="en-GB">
-=======
 <html lang="en">
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,38 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-<<<<<<< HEAD
-      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-=======
-      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;700&family=Sora:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css?v=20260309a" />
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
+    <link rel="stylesheet" href="styles.css?v=20260310c" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="topbar">
-<<<<<<< HEAD
-          <div class="brand">
-            <span class="brand-mark" aria-hidden="true"></span>
-            Draghi Watch
-          </div>
-          <nav class="site-nav" aria-label="Sections">
-            <a href="#ticker">Cost of Inaction</a>
-            <a href="#themes">Sub-themes</a>
-            <a href="#tracker">Implementation</a>
-            <a href="#timeline">Timeline</a>
-=======
           <div class="brand-block">
             <span class="brand-mark" aria-hidden="true"></span>
             <div>
-              <p class="brand-eyebrow">Public First Prototype</p>
-              <p class="brand-name">Draghi Cost of Inaction Tracker</p>
+              <p class="brand-eyebrow">Observatory-Derived Build</p>
+              <p class="brand-name">Draghi Cost of Inaction</p>
             </div>
           </div>
 
@@ -50,65 +28,11 @@
             <a href="#ticker">Headline</a>
             <a href="#themes">Themes</a>
             <a href="#tracker">Implementation</a>
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
             <a href="#method">Method</a>
           </nav>
         </div>
 
         <section class="hero" id="ticker">
-<<<<<<< HEAD
-          <p class="eyebrow">European Competitiveness — Draghi Report Monitoring</p>
-          <h1>Cost of Not Delivering the Draghi Agenda</h1>
-          <p class="dek">
-            Live estimate of forgone economic value from delayed implementation
-            of the September 2024 Draghi Report on European Competitiveness.
-            Calibrated to the EU's €800bn annual investment gap.
-          </p>
-
-          <div class="ticker-panel" aria-live="polite">
-            <p class="ticker-label">Estimated cumulative cost of inaction since report publication</p>
-            <p class="ticker-value" id="tickerValue">€0</p>
-            <p class="ticker-subline" id="tickerSubline">
-              Updating every second from 9 September 2024.
-            </p>
-            <div class="ticker-meta">
-              <div class="meta-item">
-                <span class="meta-label">Elapsed since report</span>
-                <span class="meta-value" id="elapsedSince">--</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Current cost per second</span>
-                <span class="meta-value" id="currentRate">--</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Modelled annual inaction (current year)</span>
-                <span class="meta-value" id="currentYearCost">--</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="snapshot" aria-label="Implementation summary">
-          <article class="snap-card">
-            <p class="snap-label">Reforms Tracked</p>
-            <p class="snap-value" id="policiesTracked">--</p>
-          </article>
-          <article class="snap-card">
-            <p class="snap-label">Implemented / Live</p>
-            <p class="snap-value" id="policiesImplemented">--</p>
-          </article>
-          <article class="snap-card">
-            <p class="snap-label">In Progress</p>
-            <p class="snap-value" id="policiesInProgress">--</p>
-          </article>
-          <article class="snap-card">
-            <p class="snap-label">At Risk / Stalled</p>
-            <p class="snap-value" id="policiesAtRisk">--</p>
-          </article>
-          <article class="snap-card">
-            <p class="snap-label">Upcoming Deadlines</p>
-            <p class="snap-value" id="upcomingDeadlines">--</p>
-=======
           <div class="hero-copy">
             <p class="eyebrow">European Competitiveness Monitor</p>
             <h1>Cost of not implementing the Draghi agenda</h1>
@@ -150,65 +74,30 @@
         </section>
 
         <section class="snapshot" aria-label="Official status summary">
-          <article class="snap-card">
+          <article class="snap-card snap-total">
             <p class="snap-label">Proposals tracked</p>
             <p class="snap-value" id="statTotal">--</p>
           </article>
-          <article class="snap-card">
+          <article class="snap-card snap-implemented">
             <p class="snap-label">Implemented</p>
             <p class="snap-value" id="statImplemented">--</p>
           </article>
-          <article class="snap-card">
+          <article class="snap-card snap-partial">
             <p class="snap-label">Partially implemented</p>
             <p class="snap-value" id="statPartial">--</p>
           </article>
-          <article class="snap-card">
+          <article class="snap-card snap-progress">
             <p class="snap-label">In progress</p>
             <p class="snap-value" id="statProgress">--</p>
           </article>
-          <article class="snap-card">
+          <article class="snap-card snap-risk">
             <p class="snap-label">Not implemented</p>
             <p class="snap-value" id="statNotImplemented">--</p>
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
           </article>
         </section>
       </header>
 
       <main>
-<<<<<<< HEAD
-
-        <!-- SUB-THEME TICKERS -->
-        <section class="sub-themes-section" id="themes">
-          <div class="section-head">
-            <h2>Cost by Reform Theme</h2>
-            <p>
-              The €800bn annual investment gap, decomposed across the five core
-              Draghi reform themes. Each tracker adjusts for partial implementation —
-              progress reduces, but does not eliminate, the cost of inaction.
-            </p>
-          </div>
-          <div class="sub-theme-grid" id="subThemeGrid">
-            <!-- rendered by app.js -->
-          </div>
-        </section>
-
-        <!-- IMPLEMENTATION TRACKER -->
-        <section class="controls" id="tracker">
-          <div class="control-head">
-            <h2>Implementation Tracker</h2>
-            <p>
-              Status, developments, and deadlines across Draghi Report reform recommendations,
-              cross-referenced with the Draghi Observatory implementation index.
-            </p>
-          </div>
-          <div class="control-grid">
-            <label class="control">
-              <span>Search reform</span>
-              <input
-                id="searchInput"
-                type="text"
-                placeholder="CMU, AI, energy, defence..."
-=======
         <section class="theme-section" id="themes">
           <div class="section-head">
             <h2>Cost Themes</h2>
@@ -234,155 +123,139 @@
           <div class="sector-list" id="sectorList"></div>
         </section>
 
-        <section class="controls" id="tracker">
+        <section class="tracker-shell" id="tracker">
           <div class="section-head">
             <h2>Implementation Tracker</h2>
             <p>
-              Search and filter the official Draghi Observatory proposals, with
-              an added editorial theme layer for the cost model.
+              A denser proposal tracker in the style of the Draghi Observatory,
+              with the official proposal status as the primary view and the cost
+              theme as an added editorial layer.
             </p>
+            <p class="tracker-updated" id="trackerUpdated">Last updated: --</p>
           </div>
 
-          <div class="control-grid">
-            <label class="control">
-              <span>Search proposal</span>
-              <input
-                id="searchInput"
-                type="text"
-                placeholder="grid, cloud, capital, defence..."
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
-                autocomplete="off"
-              />
-            </label>
+          <section class="implementation-index-card">
+            <div class="index-head">
+              <h3>Draghi Implementation Index</h3>
+              <p id="indexWeightedText">Weighted progress: --</p>
+            </div>
 
-            <label class="control">
-<<<<<<< HEAD
-              <span>Reform theme</span>
-              <select id="pillarFilter">
-=======
-              <span>Cost theme</span>
-              <select id="themeFilter">
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
-                <option value="all">All themes</option>
-              </select>
-            </label>
+            <div class="index-split" aria-label="Implementation split">
+              <div class="index-implemented">
+                <p class="index-value" id="indexImplementedValue">--</p>
+                <p class="index-label">Implemented</p>
+              </div>
+              <div class="index-remaining">
+                <p class="index-value" id="indexRemainingValue">--</p>
+                <p class="index-label">Remaining</p>
+              </div>
+            </div>
+          </section>
 
-            <label class="control">
-<<<<<<< HEAD
-=======
-              <span>Official sector</span>
-              <select id="sectorFilter">
-                <option value="all">All sectors</option>
-              </select>
-            </label>
+          <section class="status-breakdown-card">
+            <div class="panel-head">
+              <div>
+                <h3>Review Status Breakdown</h3>
+                <p>Share of all tracked proposals in the official observatory feed.</p>
+              </div>
+            </div>
 
-            <label class="control">
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
-              <span>Status</span>
-              <select id="statusFilter">
-                <option value="all">All statuses</option>
-              </select>
-            </label>
+            <div
+              class="status-breakdown-bar"
+              id="statusBreakdownBar"
+              aria-label="Review status breakdown"
+            ></div>
+            <div class="status-breakdown-legend" id="statusBreakdownLegend"></div>
+          </section>
 
-            <label class="control">
-<<<<<<< HEAD
-              <span>Sort</span>
-              <select id="sortSelect">
-                <option value="priority">Risk priority</option>
-                <option value="recent">Most recently updated</option>
-                <option value="deadline">Nearest deadline</option>
-                <option value="alpha">Reform name A–Z</option>
-              </select>
-            </label>
-          </div>
-          <p class="visible-count" id="visibleCount">Showing -- reforms</p>
-        </section>
+          <section class="tracker-controls">
+            <div class="tracker-controls-head">
+              <h3>Filters</h3>
+            </div>
 
-        <section class="policy-grid" id="policyList"></section>
+            <div class="control-grid">
+              <label class="control control-search">
+                <span>Search proposal</span>
+                <input
+                  id="searchInput"
+                  type="text"
+                  placeholder="grid, cloud, capital, defence..."
+                  autocomplete="off"
+                />
+              </label>
 
-        <!-- TIMELINE -->
-        <section class="timeline" id="timeline">
-          <div class="section-head">
-            <h2>Developments Timeline</h2>
-            <p id="timelineSummary">
-              Announcements, status changes, and upcoming deadlines.
-            </p>
-          </div>
-          <ol class="timeline-list" id="timelineList"></ol>
-        </section>
+              <label class="control">
+                <span>Official sector</span>
+                <select id="sectorFilter">
+                  <option value="all">All sectors</option>
+                </select>
+              </label>
 
-        <!-- METHOD -->
-        <section class="method" id="method">
-          <div class="section-head">
-            <h2>Method and Sources</h2>
-            <p id="datasetUpdated">Last updated: --</p>
-          </div>
-          <ul class="method-list">
-            <li>
-              The counter starts at midnight on
-              <strong>9 September 2024 (UTC)</strong>, the date the Draghi Report
-              was published to the European Commission.
-            </li>
-            <li>
-              The annual cost trajectory follows a convex ramp calibrated to the
-              Draghi Report's headline <strong>€800bn annual investment gap</strong>,
-              reaching full run-rate by 2035. A power-law profile (exponent 0.7)
-              reflects slow early accumulation that accelerates as structural
-              divergences compound.
-            </li>
-            <li>
-              Implementation progress reduces costs by up to
-              <strong>75%</strong> per theme — a ceiling reflecting path
-              dependency: once firms relocate, talent leaves, or competitors
-              capture markets, some damage is irreversible even with full
-              implementation.
-            </li>
-            <li>
-              Sub-theme baselines sum to €800bn/year. Each is weighted by its
-              share of the investment gap as identified in Parts A and B of
-              the Draghi Report.
-            </li>
-            <li>
-              After 2035, the model continues at the 2035 implied annual run
-              rate until superseded by new data.
-            </li>
-            <li>
-              Reform statuses are evidence-led, cross-referenced with the
-              Draghi Observatory (draghiobservatory.eu) and named official
-              EU releases.
-            </li>
-          </ul>
-=======
-              <span>Time horizon</span>
-              <select id="horizonFilter">
-                <option value="all">All horizons</option>
-              </select>
-            </label>
+              <label class="control">
+                <span>Status</span>
+                <select id="statusFilter">
+                  <option value="all">All statuses</option>
+                </select>
+              </label>
 
-            <label class="control">
-              <span>Sort</span>
-              <select id="sortSelect">
-                <option value="priority">Implementation priority</option>
-                <option value="importance">Highest importance</option>
-                <option value="alpha">Proposal A-Z</option>
-                <option value="sector">Sector A-Z</option>
-              </select>
-            </label>
-          </div>
+              <label class="control">
+                <span>Time horizon</span>
+                <select id="horizonFilter">
+                  <option value="all">All horizons</option>
+                </select>
+              </label>
 
-          <p class="visible-count" id="visibleCount">Showing -- proposals</p>
-        </section>
+              <label class="control">
+                <span>Cost theme</span>
+                <select id="themeFilter">
+                  <option value="all">All themes</option>
+                </select>
+              </label>
 
-        <section class="policy-board">
-          <div class="policy-columns" aria-hidden="true">
-            <span>ID</span>
-            <span>Proposal</span>
-            <span>Status</span>
-            <span>Theme</span>
-            <span>Sector</span>
-            <span>Horizon</span>
-          </div>
-          <div class="policy-list" id="policyList"></div>
+              <label class="control">
+                <span>Sort</span>
+                <select id="sortSelect">
+                  <option value="priority">Implementation priority</option>
+                  <option value="importance">Highest importance</option>
+                  <option value="alpha">Proposal A-Z</option>
+                  <option value="sector">Sector A-Z</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="tracker-tools">
+              <p class="visible-count" id="visibleCount">Showing -- proposals</p>
+              <button class="reset-button" id="resetFilters" type="button">Reset</button>
+            </div>
+          </section>
+
+          <section class="table-shell">
+            <div class="table-head">
+              <h3>Proposals</h3>
+              <p>Click any proposal to view the full detail.</p>
+            </div>
+
+            <div class="table-wrap">
+              <table class="proposal-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Context &amp; Strategy</th>
+                    <th>Proposed Measure</th>
+                    <th>Status</th>
+                    <th>Theme</th>
+                  </tr>
+                </thead>
+                <tbody id="policyTableBody"></tbody>
+              </table>
+            </div>
+
+            <div class="table-footer">
+              <p class="table-caption" id="tableCaption">Filtered proposals: --</p>
+              <p class="page-info" id="pageInfo"></p>
+              <div class="pagination-controls" id="paginationControls"></div>
+            </div>
+          </section>
         </section>
 
         <section class="method" id="method">
@@ -425,59 +298,12 @@
             </li>
           </ul>
 
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
           <h3>Primary Sources</h3>
           <ul class="source-list" id="sourceList"></ul>
         </section>
       </main>
     </div>
 
-<<<<<<< HEAD
-    <!-- TEMPLATES -->
-    <template id="policyTemplate">
-      <article class="policy-card">
-        <header class="policy-head">
-          <div>
-            <p class="policy-pillar"></p>
-            <h3 class="policy-title"></h3>
-          </div>
-          <span class="status-badge"></span>
-        </header>
-        <p class="policy-recommendation"></p>
-        <div class="policy-meta">
-          <p><strong>Lead:</strong> <span class="policy-lead"></span></p>
-          <p><strong>Progress:</strong> <span class="policy-progress"></span></p>
-        </div>
-        <div class="progress-track" aria-hidden="true">
-          <div class="progress-fill"></div>
-        </div>
-        <div class="policy-dates">
-          <p>
-            <span class="label">Last update</span>
-            <span class="value policy-last-update"></span>
-          </p>
-          <p>
-            <span class="label">Next deadline</span>
-            <span class="value policy-next-deadline"></span>
-          </p>
-        </div>
-        <ul class="policy-events"></ul>
-        <div class="policy-links"></div>
-      </article>
-    </template>
-
-    <template id="timelineTemplate">
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <article class="timeline-card">
-          <p class="timeline-date"></p>
-          <h3 class="timeline-title"></h3>
-          <p class="timeline-summary"></p>
-          <div class="timeline-tags"></div>
-          <a class="timeline-source" target="_blank" rel="noopener noreferrer">Source</a>
-        </article>
-      </li>
-=======
     <template id="themeTemplate">
       <article class="theme-card">
         <div class="theme-head">
@@ -524,50 +350,78 @@
       </article>
     </template>
 
-    <template id="policyTemplate">
-      <details class="policy-card">
-        <summary class="policy-summary">
-          <span class="policy-code"></span>
-          <div class="policy-title-wrap">
-            <span class="policy-title"></span>
-            <span class="policy-measure-preview"></span>
+    <template id="policyRowTemplate">
+      <tr class="proposal-row" tabindex="0">
+        <td class="proposal-id-cell"></td>
+        <td class="proposal-policy-cell">
+          <div class="proposal-policy-wrap">
+            <span class="proposal-sector-badge"></span>
+            <p class="proposal-policy-title"></p>
+            <p class="proposal-subsector"></p>
           </div>
-          <span class="status-badge"></span>
-          <span class="theme-chip"></span>
-          <span class="sector-chip"></span>
-          <span class="horizon-chip"></span>
-        </summary>
-
-        <div class="policy-detail">
-          <div class="detail-grid">
-            <div>
-              <p class="detail-label">Context and strategy</p>
-              <p class="detail-copy policy-context"></p>
-            </div>
-            <div>
-              <p class="detail-label">Proposed measure</p>
-              <p class="detail-copy policy-measure"></p>
-            </div>
-          </div>
-
-          <div class="policy-meta">
-            <p><strong>Theme:</strong> <span class="policy-theme"></span></p>
-            <p><strong>Sector:</strong> <span class="policy-sector"></span></p>
-            <p><strong>Sub-sector:</strong> <span class="policy-subsector"></span></p>
-            <p><strong>Time horizon:</strong> <span class="policy-horizon"></span></p>
-            <p><strong>Importance score:</strong> <span class="policy-importance"></span></p>
-            <p><strong>Confidence score:</strong> <span class="policy-confidence"></span></p>
-          </div>
-
-          <div class="policy-why-wrap" hidden>
-            <p class="detail-label">Why this status</p>
-            <p class="detail-copy policy-why"></p>
-          </div>
-        </div>
-      </details>
->>>>>>> 938b301 (Initial Draghi cost of inaction tracker)
+        </td>
+        <td class="proposal-measure-cell"></td>
+        <td class="proposal-status-cell"></td>
+        <td class="proposal-theme-cell"></td>
+      </tr>
     </template>
 
-    <script src="app.js"></script>
+    <div class="proposal-modal" id="proposalModal" hidden>
+      <div class="proposal-modal-backdrop" data-close-modal></div>
+      <div
+        class="proposal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="proposalModalTitle"
+      >
+        <button class="proposal-close" id="proposalCloseButton" type="button" aria-label="Close">
+          Close
+        </button>
+
+        <div class="proposal-modal-head">
+          <p class="proposal-modal-code" id="proposalModalCode"></p>
+          <h3 id="proposalModalTitle"></h3>
+          <div class="proposal-modal-badges" id="proposalModalBadges"></div>
+        </div>
+
+        <div class="proposal-modal-summary">
+          <article>
+            <p class="detail-label">Review status</p>
+            <div id="proposalModalStatus"></div>
+          </article>
+          <article>
+            <p class="detail-label">Importance</p>
+            <div id="proposalModalImportance"></div>
+          </article>
+          <article>
+            <p class="detail-label">Confidence</p>
+            <div id="proposalModalConfidence"></div>
+          </article>
+          <article>
+            <p class="detail-label">Time horizon</p>
+            <div id="proposalModalHorizon"></div>
+          </article>
+        </div>
+
+        <div class="proposal-modal-body">
+          <section class="modal-section">
+            <h4>Context &amp; Strategy</h4>
+            <p id="proposalModalPolicy"></p>
+          </section>
+
+          <section class="modal-section">
+            <h4>Proposed Measure</h4>
+            <p id="proposalModalMeasure"></p>
+          </section>
+
+          <section class="modal-section" id="proposalModalWhyWrap" hidden>
+            <h4>Why This Status</h4>
+            <p id="proposalModalWhy"></p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js?v=20260310c"></script>
   </body>
 </html>
